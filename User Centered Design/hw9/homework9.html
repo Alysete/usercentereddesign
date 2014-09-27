@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style type="text/css">
+body{
+width: 100%;
+height:100%;
+}
+html{
+width: 1000px;
+background-image: url('amazon.jpg');
+background-repeat: no-repeat;
+}
+#title{
+border: 0px solid black;
+width: 1500px;
+height: 500px;
+opacity:0;
+size:5em;
+color: black;
+}
+#headerHover{
+width: 1500px;
+}
+#title:hover{
+opacity: 1;
+size: 5em;
+}
+#accordion{
+margin: 20 auto;
+height: 300px;
+width: 600px;
+}
+.change{
+font-size: 3em;
+font-weight: bold;
+font-style: italics;
+color: green; 
+}
+#trivia{
+float:right;
+margin-right: -200px;
+margin-top: 200px;
+}
+#nav li{
+list-style:none;
+display: inline;
+}
+#gall{
+float: right;
+margin:100px;
+}
+</style>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+
+ 	<script type="text/javascript" charset="utf-8">
+
+ 		
+ 		$(document).ready(function() {
+		//replace (Trivia)
+   			$("#button1").click(function() {
+   				$("#replace").fadeOut("slow", function() {
+   					$("#replace").html("<p>The answer is: 16 million!</p>");
+   					$("#replace").fadeIn("slow");
+
+   				});
+   			});	
+
+ 		//Navigation from another document
+
+            $("#nav").click(function(){
+            	$("#navsec").load("nav.html");
+            });
+
+ 		//Changing a class
+
+			$("#add").click(function(){
+				$("#change").addClass("change");
+			});
+	
+	
+	
+ 		//accordion
+   			$("#accordion").accordion();
+
+ 		//Image Gallery
+
+ 		 $("#gall").load("gallery.html");
+ 
+		}); 
+
+ 	</script>
+</head>
+<body>
+
+<div id="all">
+	<div id="header">
+		<div id="headerHover"></div>
+			<div id="title">
+				<h2>The Truth in the Amazon</h2>
+					<h4 id="change">"In the time it takes to read this article, an area of Brazil's rain forest larger than 200 football fields will have been destroyed."-National Geographic</h4>
+						<input id="add" type="button" value="Add"></input>
+			</div>
+			<div id="navsec"></div>
+				<input id="nav" type="button" value="Open the MENU"></input>
+	</div>
+	<div id="body">
+		<div id="gall"></div>
+		<div id="accordion">
+			<h3> Background</h3>
+				<div>
+				<p>The destruction of the Amazon forest began with colonization of the Americas in the 1500s. Prior to colonization, many indigenous peoples lived and produced food from the Amazon.With the turn of the 20th century, deforestation hit an all time high. Many natural resources were excavated from the rainforest and used to make consumer goods, such as tires. </p>
+				 <a href="http://www.eoearth.org/view/article/151675/"> Source</a>
+				</div>
+			<h3>Top Facts</h3>
+				<div>
+				<ol>
+					<li> Experts estimate that we are losing 137 plant, animal and insect species every single day due to rainforest deforestation. That equates to 50,000 species a year.</li>
+					<li>As the rainforest species disappear, so do many possible cures for life-threatening diseases. Currently, 121 prescription drugs sold worldwide come from plant-derived sources. While 25% of Western pharmaceuticals are derived from rainforest ingredients, less that 1% of these tropical trees and plants have been tested by scientists.</li>
+					<li> The Amazon rainforest has been described as the “lungs of our planet” because it provides the essential environmental world service of continuously recycling carbon dioxide into oxygen. More than 20 percent of the world oxygen is produced in the Amazon rainforest.</li>
+					<li>One-fifth of the worlds fresh water is in the Amazon basin.</li>
+					<li> It is estimated that in rainforests around the world, 150 acres of rainforest are burned every minute.</li>
+				</ol>
+				<a href="http://deforestationamazonrainforest.blogspot.com/2012/05/facts.html"> Source</a>
+				</div>
+			<h3> How You Can Help</h3>
+				<div>
+				<ol>
+					<li>Reduce your paper and wood consumption.</li>
+					<ul><li>You can help reduce the pressure on our remaining forests by taking simple steps to reduce your own wood and paper use. For example, use both sides of each piece of paper, use your own cloth bags at the grocery store, use cloth napkins and towels, and avoid disposable paper plates and cups.</li></ul>
+					<li>Reduce your oil consumption.</li>
+					<ul><li>The burning of oil, gas, and coal is the primary cause of climate change, a trend that is threatening the stability of the global climate. Oil exploration projects lead to toxic pollution and massive deforestation, posing a threat to pristine ecosystems and indigenous cultures worldwide.</li></ul>
+					<li>Reduce your beef consumption.</li>
+					<ul><li>Rainforest beef is typically found in fast food hamburgers or processed beef products. Two-thirds of these countries' rainforests have been cleared, in part to raise cattle whose meat is exported to profit the U. S. food industry. If you're interested in becoming vegetarian or vegan, check out <a href="www.pitt.edu/~ams404/1052/HW7/homework7.html"> this web page</a>.</li></ul>
+					<li>Support the grassroots.</li>
+					<ul><li>You can play a critical role in future victories by joining or starting a Grassroots Action Group in your area! Contact RAN's Grassroots Coordinator at 415-398-4404 or organize@ran.org for help in finding a local group or advice on starting your own group. Equally important, help protect the forests in your region by getting involved with a local forest preservation group.</li></ul>
+				</ol>
+				<a href="http://www.adventure-life.com/articles/save-rainforest-73/"> Source</a>
+		</div>
+		</div>
+		<div id="trivia">
+			<div id="replace">
+			<p> Trivia question: How many hectares of forest disappear each year?</p>
+		</div>
+			<input id="button1" type="button" value="Click for the answer!"></input>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+	

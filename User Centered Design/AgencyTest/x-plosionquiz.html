@@ -1,0 +1,559 @@
+<!Doctype html>
+<head> 
+<title> X-Plosion </title>
+<style type="text/css">
+/*Font Types*/
+@import url(http://fonts.googleapis.com/css?family=Carrois+Gothic+SC);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+
+/*Body*/
+html{
+	width: 1300px;
+}
+body{ 
+	background-color:#eae2d7;	
+	margin: 0px auto;
+	padding: 0px;
+	border:0px;
+	width:100%;
+	}
+all{
+	margin:0 auto;
+	width: 100%;
+	}
+	
+/*Header*/
+#header{
+		width:100%;
+		height: 100px;
+		}
+#headerInner{
+		background: linear-gradient(#d9cab7,#eae2d7);
+		background: -moz-linear-gradient(#d9cab7,#eae2d7);
+		background: -ms-linear-gradient(#d9cab7,#eae2d7);
+		background: -webkit-linear-gradient(#d9cab7,#eae2d7);
+		background: -o-linear-gradient(#d9cab7,#eae2d7);
+}
+/*First Image on left*/
+#logoImage{ 
+			margin-left: 160px;
+			padding-top: 25px;
+			}
+/*Second Image in middle*/
+#banner{
+		margin-left:500px;
+		margin-top: -65px;
+		}
+/*Search bar*/		
+#search{
+		float:right;
+		padding:20px;
+		margin-top: -65px
+	}
+#searchInput{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		border:0px solid #0076a3;
+		 border-right:0px;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		margin-right: 10px;
+		color: #776855;
+	}
+.tfbutton {
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 0px #0076a3; 
+		border-right:0px;
+		background: linear-gradient(#f92b6b, #e61153);
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		margin-right: 140px;
+	}
+.clear{
+		clear:both;
+		}
+		
+/*Menu*/
+#menu{
+	margin: 0px 0px; 
+	padding: 0;
+	text-align: center; 
+	float:left; 
+	width: 1150px;
+	color:white;
+	text-transform:uppercase;
+	font-family: 'Carrois Gothic SC', sans-serif;
+	}
+	
+#nav{
+	list-style:none;
+	overflow:hidden; 
+	margin-left:150px;
+	padding: 0;
+	border: 0px solid black;
+	border-radius: 10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	behavior: url(PIE.htc);
+	background: linear-gradient(#f92b6b, #e61153);
+	color: white;
+	box-shadow: 2px 2px 2px #c5c1b8;
+	height:50px;
+	}
+#nav li{
+		float:left;
+		display:inline;
+		width: 158px;
+    	height: 20px;
+		}	
+#nav a{
+		display:inline-block;
+		padding: 10px;
+		}
+#nav a:link{
+			text-decoration:none; 
+			color: white;  
+			width: 190px;
+			height: 50px;
+			text-transform: uppercase;
+			display: block;
+			}
+#nav a:visited{
+			text-decoration:none;
+			color:white;
+			}
+#nav a:hover{
+			text-decoration:none; 
+			color:white;
+			background: linear-gradient(#504228, #281f0e);
+			width: 190px;
+			height: 50px;
+			text-transform: uppercase;
+			display: block;
+			}
+#nav a:active{
+			text-decoration:none; 
+			color:white;
+			}
+
+/*Body*/
+#body{
+	margin-left: 150px;
+	margin-right:150px;
+	width: 1150px;
+	}
+/*Left Column items*/
+#leftColumn{
+			float:left;
+			border: 0px solid black;
+			width: 900px;
+			height: 100%;
+			padding: 10px;
+			}
+#leftColumn #text{
+			float:left;
+			width: 300px;
+			font-family: 'Roboto Slab', serif;
+			font-size: .8em;
+			}
+#leftColumn #pinkBold{
+			font-weight: bold;
+			color:#e61455;
+			}
+#text h2{
+		color:#2a1f0f;
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 1.6em;
+		Text-transform: uppercase;
+		margin-top: -30px;
+		}
+#text h1{
+		font-family: 'Carrois Gothic SC', sans-serif;
+		font-size: 4em;
+		text-transform: uppercase;
+		margin-top: 0px;
+		}
+.brownText{ /*For text which appears brown*/
+		color:#776855;
+		}
+		
+.pinkText{ /*For text which appears pink*/
+		color:#e61455;
+		} 
+		
+#leftColumn img{ /*For image on left in body*/
+			margin-left: 20px;
+			}
+			
+/*For the slide show which should be active in jQuery*/			
+#imageBox{ /*Image slide show, which would use jQuery, but I'm learning jQuery in the next couple of weeks at school. Sorry!*/
+		border: 0px solid black;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		background-color:#cbbbab;
+		width: 560px;
+		padding-right: 20px;
+		padding-left:10px;
+		padding-top: 20px;
+		padding-bottom:20px;
+		box-shadow: 2px 2px 2px #c5c1b8;
+		margin-top: -5px;
+		}
+#imageBox img{
+			border:0px solid black;
+			border-radius: 10px;
+			-moz-border-radius:10px;
+			-webkit-border-radius:10px;
+			behavior: url(PIE.htc);
+			}
+#arrowBoxLeft{ /*for left arrow*/
+		border: 0px solid black;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		width: 40px;
+		height: 50px;
+		background-color:#f92b6b;
+		text-align: center;
+		vertical-align: middle;
+		margin-top: -110px;
+		margin-left:-20px;
+		float:left;
+		color: white;
+		box-shadow: 2px 2px 2px #cac3bb;
+		
+		}
+#arrowBoxRight{ /*for right arrow*/
+		border: 0px solid black;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		width: 40px;
+		height: 50px;
+		background-color:#f92b6b;
+		text-align: center;
+		vertical-align: middle;
+		float:right;
+		margin-top:-120px;
+		margin-right: 290px;
+		color: white;
+		box-shadow: 2px 2px 2px #cac3bb;
+			}
+/*bottom section of Left Column*/			
+#more{
+		margin-top:25px;
+		float:left;
+		width:600px;
+		margin-left:-20px;
+		margin-bottom: 50px;
+		height: 100%;
+		}
+#moreTop{
+			float:left;
+			border-bottom: 3px solid #c5c1b8;
+			width: 620px;
+			height:70px;
+			border-radius: 10px 10px 0px 0px;
+			-moz-border-radius:10px 10px 0px 0px;
+			-webkit-border-radius:10px 10px 0px 0px;
+			behavior: url(PIE.htc);
+			background-color: #e61455;
+			color:white;
+			padding-left:15px;
+			box-shadow: 2px 2px 2px #c5c1b8;
+			font-family: 'Carrois Gothic SC', sans-serif; 
+			font-size: 1.2em;
+			text-transform: uppercase;
+			}
+#moreBottom{
+			float:left;
+			width:605px;
+			border-radius:0px 0px 10px 10px;
+			-moz-border-radius:0px 0px 10px 10px;
+			-webkit-border-radius:0px 0px 10px 10px;
+			behavior: url(PIE.htc);
+			background-color:white;
+			padding: 15px;
+			height:200px;
+			box-shadow: 2px 2px 2px #c5c1b8;
+			}
+#moreBottom h4{
+			font-family: 'Roboto Slab', serif;
+			font-size: 1em;
+			margin-top: 10px;
+			font-weight: bold;
+			}
+#moreBottom p{
+			float:right;
+			width: 480px;
+			margin-top: 0px;
+			font-size: .8em;
+			padding:0px;
+			font-family: 'Roboto Slab', serif;
+			}
+#moreBottom img{
+			float:left;
+			border: 1px solid #c5c1b8;
+			margin-left:0;
+			margin-top: 5px;
+			}
+/*Right column items*/			
+#rightColumn{ 
+			float: right;
+			border: 0px solid black;
+			margin-right: 150px;
+			width:400px;
+			}
+#rightColumn h3{
+			border-bottom: 1px dotted #d9cbb6;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			font-family: 'Carrois Gothic SC', sans-serif;
+			text-transform:uppercase;
+			font-size: 1em;
+			}
+#rightColumn p{
+				padding-left: 20px; 
+				}
+#boxOne{ /*First social media box*/
+		float:right;
+		width:350px;
+		border:0px solid white;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		padding-top: 5px;
+		margin-top: -930px;
+		background-color: white;
+		height: 150px;
+		box-shadow: 2px 2px 2px #c5c1b8;
+		}
+#boxOne .inline{
+			display:inline;
+			margin-top: -10px;
+			font-family: 'Roboto Slab', serif;
+			font-size: .8em;
+			}
+#boxOne a{
+		text-decoration: none;
+		color:#776855;
+		}
+
+#boxTwo{ /*Second blog box*/
+		float:right;
+		width:350px;
+		border: 0px solid white;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		padding-top: 5px;
+		padding-bottom: 10px;
+		margin-top: -750px;
+		background-color: white;
+		box-shadow: 2px 2px 2px #c5c1b8;
+		}
+#boxTwo ul li{
+			font-family: 'Roboto Slab', serif;
+			font-size: .8em;
+			color:#776855;
+			}
+#boxThree{ /*Third address box*/
+		float:right;
+		width:350px;
+		border: 0px solid white;
+		border-radius: 10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+		behavior: url(PIE.htc);
+		padding-top: 5px;
+		padding-bottom:10px;
+		margin-top: -540px;
+		background-color: white;
+		box-shadow: 2px 2px 2px #c5c1b8;
+		}
+p span{
+		display: block;
+		font-family: 'Roboto Slab', serif;
+		font-size: .8em;
+		color:#776855;
+		}
+.bold{
+	font-weight: bold;
+	}	
+
+/*Footer*/
+#footer{
+		clear: both;
+		width:100%;
+		}
+#footerinner{
+			background-color:#cbbbab;
+			border-top: 5px solid #beb1a1;
+			color:#837461;
+			padding: 10px;
+			margin-top: 50px;
+			font-family: 'Roboto Slab', serif;
+			font-size:.8em;
+			padding-left: 150px;
+			}
+			
+#footerinner ul{ 
+			float: right;
+			list-style: none; 
+			margin-top:-30px;
+			padding-right:430px;
+			
+			}
+#footerinner li{
+				display: inline;
+				}
+#footerinner a{
+				color: #776855;  
+				border-left: 1px dotted #776855;
+				padding: 10px;
+#footerinner a:link{
+			text-decoration:none; 
+			color: #776855;  
+			}
+#nav a:visited{
+			text-decoration:none;
+			color:#776855;
+			}
+#nav a:hover{
+			text-decoration:none; 
+			color:#776855;
+			}
+#nav a:active{
+			text-decoration:none; 
+			color:#776855;
+			}
+
+			
+</style>
+</head>
+
+
+<body>
+	<div id="all">
+	
+		<div id="header">
+			<div id="headerInner">
+				<div id="logoImage">
+					<img src="logo.png" alt="Logo"/>
+				</div>	
+				<div id="banner">
+					<img src="img_header-banner.png" alt="Banner"/>
+				</div>
+				<div id="searchBar">
+					<form id="search" method="get" action="http://www.google.com">
+		      	    <input type="text" id="searchInput" name="q" size="21" maxlength="120" value="Search X-Plosion"><input type="submit" value="search" class="tfbutton">
+					</form>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+		</div>
+		
+		<div id="menu">
+			<div id="menuInner">
+				<ul id="nav"> 
+					<li class="menuItem"><a href="#">Home</a></li>
+					<li class="menuItem"><a href="#">Blog</a></li>
+					<li class="menuItem"><a href="#">Our Products</a></li>
+					<li class="menuItem"><a href="#">About Us</a></li>
+					<li class="menuItem"><a href="#">Where to Buy</a></li>
+					<li class="menuItem"><a href="#">Contact Us</a></li>
+				</ul>
+			</div>		
+		</div>
+		
+		<div id="body">
+			<div id="leftColumn">
+				<div id="text">
+					<h1 class="pinkText"> x-plosion</h1>
+						<h2 class="brownText"> soda for superheros!</h2>
+							<p id="pinkBold">Try a healthy alternative to the current artificial drinks - your mind, body and tongue will thank you!</p>
+							<p class="brownText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+				</div>
+				<img src="img_x-plosion.png" alt="x-plosion bottle"/>
+				<div id="imageBox">
+					<img src="img_x-plosion-thumb-1.png" alt="X-Plosion"/>
+					<img src="img_x-plosion-thumb-2.png" alt="X-Plosion"/>
+					<img src="img_x-plosion-thumb-3.png" alt="X-Plosion"/>
+				</div>
+				<div id="arrowBoxLeft">
+					<p> &lt; </p>
+				</div>
+				<div id="arrowBoxRight">
+					<p> > </p>
+				</div>
+				<div id="more">
+					<div id="moreTop">
+						<h3> x-plosion products news</h3>				
+					</div>
+					<div id="moreBottom">
+						<h4 class="brownText"> We say NO to artificial flavours</h4>
+							<img src="img_x-plosion-news-1.png" alt="News 1"/>
+							<p class="brownText"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+							<p class="pinkText"> More > </p>
+					</div>
+				</div>
+			</div>
+				
+			<div id="rightColumn">
+				<div id="boxOne">
+					<h3 class="pinkText">follow us</h3>
+					<p><span class="inline"><a href="#"><img src="facebookLogo.png" alt="Facebook"/>Facebook</a></span>
+					<span class="inline"><a href="#"> <img src="twitterLogo.png" alt="Twitter"/> Twitter</a></span>
+					<span class="inline"> <a href="#"><img src="googleplsLogo.png" alt="GooglePlus"/>Google+</a></span></p>
+				</div>
+				<div id="boxTwo">
+					<h3 class="pinkText">randomly selected</h3>
+					<ul class="brownText">
+						<li> X-Plosion is a hit in Japan</li>
+						<li> 3 new flavors added</li>
+						<li> Check our new promo on Youtube</li>
+						<li> We say NO to artificial flavours</li>
+						<li> X-Plosion and your health</li>
+					</ul>
+				</div>	
+				<div id="boxThree">
+				<h3 class="pinkText">where can you find us?</h3>
+				<p  class="brownText"> <span class="bold">X-Poison Ltd</span><span> 9 Danbury Road</span><span> Wilton, CT 06897</span></p>
+				</div>
+			</div>
+		</div>	
+			<div id="footer">
+				<div id="footerinner">
+					<p> (c) Copyright 2011 X-Plosion Ltd.</p>
+						<ul> 
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Privacy policy</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+				</div>
+			</div>
+	</div>
+</body>
+</html>	

@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> ORAS: Home</title>
+<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'/>
+<style type="text/css"> 
+/*******************************************CSS STYLE****************************************/
+body{
+width: 100%; 
+height: 100%; 
+background-image:url('faux.jpg');
+background-repeat: repeat-y; 
+background-color:#13061a; 
+margin: 0 0; 
+padding:0;
+ }
+
+/********************************************HEADER*******************************************/
+#head{ /*Sets header width and height*/
+width: 100%; 
+height: 174px; 
+margin: 0px 0px;
+}
+#headInner{ /*Sets header background image*/
+background-image:url('bannernew.jpg'); 
+background-position:center; 
+}
+#logo{ /*sets logo opacity and margin size*/
+opacity: 0.6; 
+ margin:0 5px;
+ }
+#logo:hover{/*increases opacity on hover*/
+opacity:1.0; 
+}
+
+/*****************************************END HEADER***************************************/
+
+
+/********************************************NAV*********************************************/
+#nav{ /*sets nav width and margin and text align, etc*/
+width: 900px; 
+margin: -135px 300px;
+text-align: center;
+float:left;
+color: rgba(222, 217, 249,.9); 
+   }
+#navInner ul{ /*sets list style and sets bullets in a row rather than column*/
+list-style-type:none;
+display:inline;
+overflow:hidden;
+  }
+#navInner ul li{ /*sets nav links margins and displays in row*/
+float:left;
+margin: 0 20px 0 0;
+display: inline-block;
+display: inline;
+    }
+#navInner li:hover ul{ /*Sets link on hover to increase width*/
+ display:block; 
+ height:auto;
+  width:7em;
+  }
+#navInner ul li a { /*sets opacity for link and width and height, background icon images, font size and family*/
+opacity: 0.6; 
+display: block;
+width: 130px;
+height: 105px; 
+background-image: url(icons.png);
+background-repeat: no-repeat; 
+font-size: 1em; 
+font-family: 'Alegreya Sans', sans-serif;
+color: rgba(222, 217, 249,1.0); 
+     }
+/*The following sets background position for nav icons*/
+#navInner ul li:nth-child(1) a{ 
+background-color: black;
+background-position: 0 0;
+ }
+#navInner ul li:nth-child(2) a{ 
+background-position: -120px 0;
+ }
+#navInner ul li:nth-child(3) a{
+background-color: black;
+background-position: -240px 0;
+  }
+#navInner ul li:nth-child(4) a{
+background-color: black;
+background-position: -360px 0;
+ }
+#navInner ul li:nth-child(5) a{
+background-color: black;
+background-position: -480px 0;
+  }
+#navInner ul li:nth-child(6) a{ 
+background-color: black;
+background-position: -600px 0;
+ }
+#navInner ul li:nth-child(7) a{ 
+background-color: black;
+background-position: -720px 0;
+}
+#navInner ul li:nth-child(8) a{
+background-color: black;
+background-position: -840px 0;
+ }
+/*End nav icon positioning*/
+/*the following set LVHA for the nav elements*/
+#navInner a:link{ /*sets text decoration to none, sets width and font-weight*/
+text-decoration:none;
+color: rgba(222, 217, 249,1.0); 
+background-color: #52576d;
+display:block;
+width: 80px;
+font-weight: bold;
+    }
+#navInner a:visited{ /*sets specific styles for a visited link*/ 
+text-decoration:none;
+color: rgba(222, 217, 249,1.0); 
+ }
+#navInner a:hover{/*changes style for hover: increases width size, opacity and changes text to uppercase*/
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+background-color: #52576d;
+display:block;
+width: 90px;
+opacity:1.0; 
+font-family: 'Alegreya Sans', sans-serif; 
+text-transform: uppercase;
+    }
+#navInner a:active{ /*Sets style for active links*/
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+}
+/**********************************************END NAV CSS*********************************/
+
+/**********************************************MAIN****************************************/
+#main{
+width: 1000px; 
+height: 450px;
+}
+
+#mainInner{ /*sets border specifications, height, background image, margins etc*/
+border: 0px solid #2b0d28;
+border-radius: 10px;
+width: 1000px;
+height: 450px;
+background-color: black;
+background-image: url('staryskyobs.jpg');
+background-repeat: no-repeat;
+margin-left: 180px;
+margin-top: 50px;
+margin-bottom: 50px;
+float:left;
+   }
+#main p{ /*Sets specifications for paragraph elements*/
+float: left;
+padding-left: 30px;
+padding-top: 0px;
+color: #ded9f9;
+font-size: 3em;
+font-family: 'Alegreya Sans', sans-serif;
+}
+
+/******************************************END MAIN CSS***********************************/
+
+/******************************************FOOTER*******************************************/
+#footer{ /*clears floats, adds background image and sets margins and border*/
+clear:both;
+background-image: url('bannernew.jpg');
+margin-right: 100px;
+margin-top: 200px;
+margin-left:180px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+}
+#footerInner{/*sets width, border, text alignment margins and font specs for text in footer*/
+background-color:#fffff8;
+width: 500px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+text-align: center;
+margin: -50px auto;
+color:#55355c;
+font-family: 'Linden Hill', serif;
+font-size: 1.1em;
+  }
+/**************************************END FOOTER CSS************************************/
+
+/****************************************END PAGE CSS***********************************/
+</style>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="head">
+		<div id="headInner">
+			<a href="/~ams404/1052/ORAS/ORAShome.html"><img id="logo" src="logosmall.jpg" alt="ORAS Logo"/> </a>
+		</div>
+	</div>
+	
+	<div id="nav">
+		<div id="navInner">
+			<ul>
+				<li><a href="/~ams404/1052/ORAS/ORAShome.html">Home</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASabout.html">About</a></li>
+				<li><a href="/~ams404/1052/ORAS/directions.html">Directions</a></li>
+				<li><a href="/~ams404/1052/ORAS/membership.html"> Membership</a></li>
+				<li><a href="/~ams404/1052/ORAS/members.html">Board of Directors</a></li>
+				<li><a href="/~ams404/1052/ORAS/calendar.html">Upcoming Events</a></li>
+				<li><a href="/~ams404/1052/ORAS/Astroblast.html">Astroblast</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASeducation.html">Education @ Oras</a> </li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id= "main">
+		<div id="mainInner">
+			<p> Come explore the sky with us...</p>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="footerInner">
+			<p> Oil Region Astronomical Society <br />
+			You can mail us at: P.O. Box 1535, Oil City, PA 16301 <br />
+ 			Or call the observatory: (814) 437-2525</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

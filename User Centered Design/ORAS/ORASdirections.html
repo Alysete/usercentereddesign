@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<title> ORAS: Directions</title>
+<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'/>
+<style type="text/css"> 
+/****CSS STYLE*****/
+body{
+width: 100%; 
+height: 100%; 
+background-image:url('faux.jpg');
+ background-repeat: repeat-y; 
+ background-color:#13061a; 
+ margin: 0 0; 
+ padding:0;
+ }
+
+/******Header******/
+#head{
+width: 100%; 
+height: 174px; 
+margin: 0px 0px;
+}
+#headInner{
+background-image:url('bannernew.jpg'); 
+background-position:center; 
+}
+#logo{
+opacity: 0.6; 
+filter:alpha(opacity-60);
+ margin:0 5px;
+ }
+#logo:hover{
+opacity:1.0; 
+filter:alpha(opacity=10);
+}
+
+/******Nav*******/
+#nav{
+width: 900px; 
+margin: -135px 300px;
+ text-align: center;
+  float:left;
+  color: rgba(222, 217, 249,.9); 
+   }
+#navInner ul{
+list-style-type:none;
+ display:inline;
+ overflow:hidden;
+  }
+#navInner ul li{
+float:left;
+ margin: 0 20px 0 0;
+  display: inline-block;
+   display: inline;
+    }
+#navInner li:hover ul{
+ display:block; 
+ height:auto;
+  width:7em;
+  }
+#navInner ul li a {
+ opacity: 0.6; 
+ filter:alpha(opacity-60);
+ display: block;
+  width: 130px;
+   height: 105px; 
+   background-image: url(icons.png);
+    background-repeat: no-repeat; 
+    font-size: 1em; 
+    font-family: 'Alegreya Sans', sans-serif;
+    color: rgba(222, 217, 249,1.0); 
+     }
+#navInner ul li:nth-child(1) a{ 
+background-color: black;
+ background-position: 0 0;
+ }
+#navInner ul li:nth-child(2) a{ 
+ background-position: -120px 0;
+ }
+#navInner ul li:nth-child(3) a{
+ background-color: black;
+  background-position: -240px 0;
+  }
+#navInner ul li:nth-child(4) a{
+ background-color: black;
+  background-position: -360px 0;
+ }
+#navInner ul li:nth-child(5) a{
+ background-color: black;
+  background-position: -480px 0;
+  }
+#navInner ul li:nth-child(6) a{ 
+background-color: black;
+ background-position: -600px 0;
+ }
+#navInner ul li:nth-child(7) a{ 
+background-color: black;
+background-position: -720px 0;
+}
+#navInner ul li:nth-child(8) a{
+ background-color: black;
+ background-position: -840px 0;
+ }
+
+#navInner a:link{
+text-decoration:none;
+ color: rgba(222, 217, 249,1.0); 
+  background-color: #52576d;
+   display:block;
+    width: 80px;
+    font-weight: bold;
+    }
+#navInner a:visited{
+text-decoration:none;
+ color: rgba(222, 217, 249,1.0); 
+ }
+#navInner a:hover{
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+ background-color: #52576d;
+  display:block;
+   width: 90px;
+   opacity:1.0; 
+   filter:alpha(opacity=10);
+    font-family: 'Alegreya Sans', sans-serif; 
+    text-transform: uppercase;
+    }
+#navInner a:active{
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+}
+
+/******Main*****/
+#main{
+width: 1030px; 
+height: 300px;
+}
+
+#mainInner{
+border: 0px solid #2b0d28;
+ border-radius: 10px;
+ width: 1000px;
+height: 600px;
+margin-left: 150px;
+margin-top: 30px;
+margin-bottom: 50px;
+background-color: white;
+padding: 15px;
+   float:left;
+   }
+#main p{
+float: left;
+padding 10px;
+color: black;
+font-size: 1.2em;
+ font-family: 'Linden Hill', serif;
+}
+span{
+font-weight: bold;
+font-family: 'Alegreya Sans', sans-serif;
+}
+#map-canvas{
+float:left;
+width: 1000px;
+height: 200px;
+margin-left: 150px;
+margin-top: -350px;
+margin-bottom: 50px;
+}
+#main a:link{
+text-decoration:none;
+color: #55355c; 
+}
+#main a:visited{
+text-decoration:none;
+color: #55355c; 
+ }
+#main a:hover{
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+}
+#navInner a:active{
+text-decoration:none; 
+color: #55355c; 
+}
+
+
+/******Footer****/
+#footer{
+clear:both;
+background-image: url('bannernew.jpg');
+margin-right: 100px;
+margin-top: 200px;
+margin-left:150px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+
+}
+#footerInner{
+background-color:#fffff8;
+width: 500px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+text-align: center;
+margin: -50px auto;
+color:#55355c;
+font-family: 'Linden Hill', serif;
+font-size: 1.1em;
+  }
+
+</style>
+
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjm7PkVSoKPzCLRyIv-kf1yOhZunickX0&sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(41.47926132245345, -79.76829528808594),
+          zoom: 10
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="head">
+		<div id="headInner">
+			<a href="/~ams404/1052/homeORAS.html"><img id="logo" src="logosmall.jpg" alt="ORAS Logo"/> </a>
+		</div>
+	</div>
+	
+	<div id="nav">
+		<div id="navInner">
+			<ul>
+				<li><a href="/~ams404/1052/ORAS/ORAShome.html">Home</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASabout.html">About</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASdirections.html">Directions</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASmembership.html"> Membership</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASmembers.html">Board of Directors</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORAScalendar.html">Upcoming Events</a></li>
+				<li><a href="/~ams404/1052/ORAS/Astroblast.html">Astroblast</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASeducation.html">Education @ Oras</a> </li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id= "main">
+		<div id="mainInner">
+			<p><span> The Oil Region Astronomical Observatory </span>is located in Venango County&#39;s picturesque <a href="http://www.twomilerun.net/"> Two Mile Run Park & Justus Lake</a>. The observatory is located in the Lockwood area of the park and is only a short drive from Oil City, Franklin or Titusville in the heart of Pennsylvania&#39;s Oil Country.</p>
+
+			<p><span>From Franklin:</span> Take PA Route 417 north approximately 3 miles to the Y - intersection with Cherrytree Road. Veer right onto Cherrytree Road and drive approximately 3.5 miles. Lockwood and the observatory entrance are on your right.</p>
+
+			<p><span>From Oil City:</span> Take PA Route 428 North 5.6 miles to Cherrytree Road. Take a left onto Cherrytree and proceed west through the park. The entrance to Lockwood and observatory will be on your left, approximately two miles past the park office.</p>
+		</div>
+		<div id="map-canvas" style="width: 100%; height: 100%">
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="footerInner">
+			<p> Oil Region Astronomical Society <br />
+			You can mail us at: P.O. Box 1535, Oil City, PA 16301 <br />
+ 			Or call the observatory: (814) 437-2525</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

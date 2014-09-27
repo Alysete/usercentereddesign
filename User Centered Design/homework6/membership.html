@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title> ORAS: Membership</title>
+<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'/>
+<style type="text/css"> 
+/*******************************************CSS STYLE****************************************/
+body{
+width: 100%; 
+height: 100%; 
+background-image:url('faux.jpg');
+background-repeat: repeat-y; 
+background-color:#13061a; 
+margin: 0 0; 
+padding:0;
+ }
+
+/********************************************HEADER*******************************************/
+#head{ /*Sets header width and height*/
+width: 100%; 
+height: 174px; 
+margin: 0px 0px;
+}
+#headInner{ /*Sets header background image*/
+background-image:url('bannernew.jpg'); 
+background-position:center; 
+}
+#logo{ /*sets logo opacity and margin size*/
+opacity: 0.6; 
+filter:alpha(opacity-60);
+ margin:0 5px;
+ }
+#logo:hover{/*increases opacity on hover*/
+opacity:1.0; 
+filter:alpha(opacity=10);
+}
+
+/*****************************************END HEADER***************************************/
+
+
+/********************************************NAV*********************************************/
+#nav{ /*sets nav width and margin and text align, etc*/
+width: 900px; 
+margin: -135px 300px;
+text-align: center;
+float:left;
+color: rgba(222, 217, 249,.9); 
+   }
+#navInner ul{ /*sets list style and sets bullets in a row rather than column*/
+list-style-type:none;
+display:inline;
+overflow:hidden;
+  }
+#navInner ul li{ /*sets nav links margins and displays in row*/
+float:left;
+margin: 0 20px 0 0;
+display: inline-block;
+display: inline;
+    }
+#navInner li:hover ul{ /*Sets link on hover to increase width*/
+ display:block; 
+ height:auto;
+  width:7em;
+  }
+#navInner ul li a { /*sets opacity for link and width and height, background icon images, font size and family*/
+opacity: 0.6; 
+filter:alpha(opacity-60);
+display: block;
+width: 130px;
+height: 105px; 
+background-image: url(icons.png);
+background-repeat: no-repeat; 
+font-size: 1em; 
+font-family: 'Alegreya Sans', sans-serif;
+color: rgba(222, 217, 249,1.0); 
+     }
+/*The following sets background position for nav icons*/
+#navInner ul li:nth-child(1) a{ 
+background-color: black;
+background-position: 0 0;
+ }
+#navInner ul li:nth-child(2) a{ 
+background-position: -120px 0;
+ }
+#navInner ul li:nth-child(3) a{
+background-color: black;
+background-position: -240px 0;
+  }
+#navInner ul li:nth-child(4) a{
+background-color: black;
+background-position: -360px 0;
+ }
+#navInner ul li:nth-child(5) a{
+background-color: black;
+background-position: -480px 0;
+  }
+#navInner ul li:nth-child(6) a{ 
+background-color: black;
+background-position: -600px 0;
+ }
+#navInner ul li:nth-child(7) a{ 
+background-color: black;
+background-position: -720px 0;
+}
+#navInner ul li:nth-child(8) a{
+background-color: black;
+background-position: -840px 0;
+ }
+/*End nav icon positioning*/
+/*the following set LVHA for the nav elements*/
+#navInner a:link{ /*sets text decoration to none, sets width and font-weight*/
+text-decoration:none;
+color: rgba(222, 217, 249,1.0); 
+background-color: #52576d;
+display:block;
+width: 80px;
+font-weight: bold;
+    }
+#navInner a:visited{ /*sets specific styles for a visited link*/ 
+text-decoration:none;
+color: rgba(222, 217, 249,1.0); 
+ }
+#navInner a:hover{/*changes style for hover: increases width size, opacity and changes text to uppercase*/
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+background-color: #52576d;
+display:block;
+width: 90px;
+opacity:1.0; 
+filter:alpha(opacity=10);
+font-family: 'Alegreya Sans', sans-serif; 
+text-transform: uppercase;
+}
+#navInner a:active{ /*Sets style for active links*/
+text-decoration:none; 
+color: rgba(222, 217, 249,1.0); 
+}
+/**********************************************END NAV CSS*********************************/
+
+/*************************************************MAIN************************************/
+#main{
+width: 1000px; 
+height: 800px;
+}
+
+#mainInner{ /*sets border, width, height, background, margins*/
+border: 5px solid #2b0d28;
+border-radius: 10px;
+width: 1000px;
+height: 720px;
+background-color: #fffff8;
+background-position: 0 50px;
+background-repeat: no-repeat;
+margin-left: 150px;
+margin-top: 0;
+margin-bottom: 50px;
+float:left;
+   }
+#main p{ /*sets text specs for paragraph element*/
+float: left;
+font-family: 'Linden Hill', serif;
+font-size: 1.2em;
+}
+#main h3{ /*sets text specs for header three*/
+font-family: 'Alegreya Sans', sans-serif;
+font-size: 1.4em;
+}
+#main h4{ /*sets text specs for header four*/
+font-family: 'Alegreya Sans', sans-serif;
+font-size: 1.3em;
+}
+/*Start left column specs*/
+#column1{ /*sets width, height, border for left column*/
+float: left;
+width: 550px;
+height: 600px;
+border: 0px solid  #2b0d28;
+border-top-left-radius: 10px; 
+border-bottom-left-radius: 10px;
+color:black;
+}
+#benefits{ /*sets text specs for benefits section*/
+float: left;
+font-family: 'Linden Hill', serif;
+font-size: 1.1em;
+}
+#benefits span{ /*sets special text for span*/
+float:left;
+font-size: 1.5em;
+padding-left: 20px;
+}
+/*The following is link specification for left column*/
+#column1 a:link{
+color:#d17d35;
+text-decoration: none;
+list-style-type:none;
+font-family: 'Linden Hill', serif;
+font-weight: bold;
+}
+#column1 a:visited{
+color:#55355c;
+text-decoration: none;
+list-style-type:none;
+font-family: 'Linden Hill', serif;
+font-weight: bold;
+}
+#column1 a:hover{
+color:#969b94;
+text-decoration: none;
+list-style-type:none;
+font-family: 'Linden Hill', serif;
+font-weight: bold;
+}
+#column1 a:active{
+color:#55355c;
+text-decoration: none;
+list-style-type:none;
+font-family: 'Linden Hill', serif;
+font-weight: bold;
+}
+/*end link specs*/
+/*end left column specs*/
+
+/*right column specs*/
+#column2{ /*sets width, height, border, padding for right column*/
+float: right;
+width: 350px;
+height: 680px;
+border-left: 3px solid #2b0d28;
+border-top-right-radius:10px;
+border-bottom-right-radius: 10px;
+padding: 20px;
+}
+#column2 p{ /*sets style for paragraph element in right column*/
+float: left;
+font-family: 'Linden Hill', serif;
+font-size: 1.8em;
+margin-top: 15px;
+}
+form{ /*sets style for form*/
+margin-top: 40px;
+position:relative;
+width:320px;
+height: 100%px;
+line-height: 24px;
+color: white;
+font-family: 'Alegreya Sans', sans-serif;
+background-image:url('bannernew.jpg');
+background-position: -500px, 0;
+padding:20px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.3);
+font-size: 1em;
+}
+/*end right column specs*/
+/************************************************END MAIN CSS*********************************/
+
+/********************************************FOOTER********************************/
+#footer{ /*sets footer margins, border, and background*/
+clear:both;
+background-image: url('bannernew.jpg');
+margin-right: 100px;
+margin-top: 50px;
+margin-left:150px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+}
+#footerInner{ /*Sets text in footer specs*/
+background-color:#fffff8;
+width: 500px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+text-align: center;
+margin: -50px auto;
+color:#55355c;
+font-family: 'Linden Hill', serif;
+font-size: 1.1em;
+}
+/******************************************END FOOTER CSS**********************************/
+/******************************************END CSS*****************************************/
+</style>
+
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="head">
+		<div id="headInner">
+			<a href="/~ams404/1052/ORAS/ORAShome.html"><img id="logo" src="logosmall.jpg" alt="ORAS Logo"/> </a>
+		</div>
+	</div>
+	
+	<div id="nav">
+		<div id="navInner">
+			<ul>
+				<li><a href="/~ams404/1052/ORAS/ORAShome.html">Home</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASabout.html">About</a></li>
+				<li><a href="/~ams404/1052/ORAS/directions.html">Directions</a></li>
+				<li><a href="/~ams404/1052/ORAS/membership.html"> Membership</a></li>
+				<li><a href="/~ams404/1052/ORAS/members.html">Board of Directors</a></li>
+				<li><a href="/~ams404/1052/ORAS/calendar.html">Upcoming Events</a></li>
+				<li><a href="/~ams404/1052/ORAS/Astroblast.html">Astroblast</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASeducation.html">Education @ Oras</a> </li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id= "main">
+		<div id="mainInner">
+			<div id="column1">
+				<div id="benefits">
+				<span>
+				<p>ORAS Membership Benefits: </p>
+				</span>
+				</br>
+				</br>
+				</br>
+				</br>
+				
+				
+					<ul>
+						<li>Unlimited access to the Observatory site. If you want to get away from the lights and spend some quiet time with nature under the stars, just head out to the Observatory. As an ORAS member, you and friends or family you are accompanying can spend as much time at the Observatory as you want. Come spend an evening or stay for the weekend; the important thing is you can work your stay around your schedule. If you would like to have your own key to the gate, contact Tim Spuck at 814-354-6515. The outdoor outlets on the side of the building are on, but access to the building and 14-inch telescope is limited to those who have gone through the Observatory Training. Please contact Tim Spuck if you are interested in training.</li>
+
+						<li>ORAS is a member organization of the Astronomical League, and that comes with many benefits. You will get their quarterly newsletter --The Reflector, a 10% discount on astronomy related books, observing awards, and much more (visit their website <a href="http://astroleague.org">here</a>). Please return your membership renewal by June 15 each year to take advantage of this offer.</li>
+
+						<li> Membership in the ORAS Listserv that will allow you to keep up to date on current astronomical events.</li>
+
+						<li> Access to a robotic telescope in Perth, Australia, and telescope access at Observatory.</li>
+
+						<li>Knowing that your membership is supporting a valuable resource in our community. We are fortunate to have an observatory available to the public, which can inspire children of all ages to both learn what we think we know, and dream about what we may not.</li>
+
+						<li>Access to many knowledgeable individuals in the field of Amateur Astronomy.</li>
+						</ul>
+				</div>
+			</div>
+			<div id="column2">
+				<p> Online Application:</p>
+				<br />
+				<br />
+				<br />
+					<form>
+						<input type="text" value="First Name"></input> <br />
+						<input type="text" value= "Last Name"></input> <br />
+						<input type="text" value= "Email Address"></input>
+						<br />
+						<br />
+						<b> Select your desired membership level: </b><select><option> Regular Membership: $24.00 USD - yearly</option><option> Student Membership (K-College): $12.00 USD - yearly </option><option> Family Membership: $36.00 USD - yearly </option><option> Contributing member: $60.00 USD </opiton></select> <br /> <br />
+						<input type="radio" name= "choice" value= "yes"></input><b> Select to sign up for our newsletter</b> <br /><br />
+						<textarea rows="5" cols="42">Add any additional information here (optional) </textarea> <br /> <br />
+						<b> How did you hear about us?</b> <br />From a friend<input type="checkbox"> Google Search <input type="checkbox"></input> Other: <input type="text" size = "10"></input> <br /> <br />
+						<input type="button" value= "Submit"></input>
+						<input type="reset" value="Clear Form"></input>
+					</form>
+			</div>	
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div id="footerInner">
+			<p> Oil Region Astronomical Society <br />
+			You can mail us at: P.O. Box 1535, Oil City, PA 16301 <br />
+ 			Or call the observatory: (814) 437-2525</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

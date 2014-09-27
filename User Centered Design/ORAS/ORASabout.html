@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<link rel="stylesheet" href="home/css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+
+<link href='http://fonts.googleapis.com/css?family=Linden+Hill:400,400italic' rel='stylesheet' type='text/css'/>
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:400,700' rel='stylesheet' type='text/css'/>
+<style type="text/css"> 
+/****CSS STYLE*****/
+body{
+width: 900px; 
+height: 100%; 
+background-image:url('faux.jpg'); 
+background-repeat: repeat-y; 
+background-color:#13061a;
+ margin: 0 0; 
+ padding:0;
+ }
+
+/******Header******/
+#head{
+width: 1250px;
+ height: 174px;
+  margin: 0px 0px;
+  }
+#headInner{
+background-image:url('bannernew.jpg'); 
+background-repeat: no-repeat;
+ background-position:center; 
+ }
+#logo{
+opacity: 0.6; 
+filter:alpha(opacity-60);
+ margin:0 5px;
+ }
+#logo:hover{
+opacity:1.0; 
+filter:alpha(opacity=10);
+}
+
+#nav{
+width: 900px; 
+margin: -135px 300px;
+ text-align: center;
+  float:left;
+   }
+#navInner ul{
+list-style-type:none;
+ display:inline;
+ overflow:hidden;
+  }
+#navInner ul li{
+float:left;
+ margin: 0 20px 0 0;
+  display: inline-block;
+   display: inline;
+    }
+#navInner li:hover ul{
+ display:block; 
+ height:auto;
+  width:7em;
+  }
+#navInner ul li a {
+ opacity: 0.8; 
+ filter:alpha(opacity-80);
+ display: block;
+  width: 130px;
+   height: 105px; 
+   background-image: url(icons.png);
+    background-repeat: no-repeat; 
+    font-size: 1em; 
+    font-family: 'Alegreya Sans', sans-serif;
+     }
+#navInner ul li:nth-child(1) a{ 
+background-color: black;
+ background-position: 0 0;
+ }
+#navInner ul li:nth-child(2) a{ 
+ background-position: -120px 0;
+ }
+#navInner ul li:nth-child(3) a{
+ background-color: black;
+  background-position: -240px 0;
+  }
+#navInner ul li:nth-child(4) a{
+ background-color: black;
+  background-position: -360px 0;
+ }
+#navInner ul li:nth-child(5) a{
+ background-color: black;
+  background-position: -480px 0;
+  }
+#navInner ul li:nth-child(6) a{ 
+background-color: black;
+ background-position: -600px 0;
+ }
+#navInner ul li:nth-child(7) a{ 
+background-color: black;
+background-position: -720px 0;
+}
+#navInner ul li:nth-child(8) a{
+ background-color: black;
+ background-position: -840px 0;
+ }
+
+#navInner a:link{
+text-decoration:none;
+ color: #ded9f9;
+  background-color: #52576d;
+   display:block;
+    width: 80px;
+    font-weight: bold;
+    }
+#navInner a:visited{
+text-decoration:none;
+ color:#ded9f9;
+ }
+#navInner a:hover{
+text-decoration:none; 
+color:#ded9f9;
+ background-color: #52576d;
+  display:block;
+   width: 90px;
+   opacity:1.0; 
+   filter:alpha(opacity=10);
+    font-family: 'Alegreya Sans', sans-serif; 
+    text-transform: uppercase;
+    }
+#navInner a:active{
+text-decoration:none;
+ color:white;
+ }
+
+
+/******Main*****/
+#main{
+width: 1000px;
+ height: 1000px;
+ }
+
+#mainInner{
+border: 5px solid #2b0d28;
+ border-radius: 10px;
+  width: 1000px;
+   float:left;
+    padding: 10px 10px 10px 10px;
+     margin: 10px 125px; 
+     background: #fffff8;
+     }
+#captionimage{
+border: 2px solid #2b0d28;
+ float: right;
+  padding: 1em;
+   width: 400px;
+    margin-bottom: 40px;
+     }
+dl#captionimage dd{
+padding-left:0; 
+text-align: center;
+ font-style: italic;
+ font-family: 'Linden Hill', serif;
+ }
+#mainInner object{
+float:left; 
+padding-left: 20px;
+} 
+#mainInner h1{
+font-family: 'Alegreya Sans', sans-serif;
+ padding-left: 10px;
+ }
+#right{
+float:right;
+ padding-right:20px;
+ width: 450px; 
+ padding-top: 170px;
+ }
+#rightText{
+padding: 10px 20px 5px 5px;
+}
+#rightText p{
+font-family: 'Linden Hill', serif;
+font-size: 1.2em;
+}
+#rightText h3{
+font-family: 'Alegreya Sans', sans-serif;
+font-size: 1.4em;
+}
+#leftColumn{
+float:left;
+ width:450px;
+  }
+#leftText{
+padding: 5px 5px 5px 20px;
+}
+#leftText p{
+font-family: 'Linden Hill', serif;
+ font-size: 1.2em;
+ }
+#leftText h3{
+font-family: 'Alegreya Sans', sans-serif;
+ font-size: 1.4em;
+ }
+#mission{
+padding-left: -15px;
+text-align:center; 
+font-size: 1.25em;
+ width: 1000px;
+  font-family: 'Linden Hill', serif;
+   font-style: italic;
+   }
+
+
+/******Footer****/
+#footer{
+clear:both;
+background-image: url('bannernew.jpg');
+width: 1000px;
+margin-right: 100px;
+margin-top: 10px;
+margin-left:130px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+
+}
+#footerInner{
+background-color:#fffff8;
+width: 500px;
+border: 0px solid #2b0d28; 
+border-radius:10px; 
+text-align: center;
+ margin: -50px auto;
+ color:#55355c;
+ font-family: 'Linden Hill', serif;
+  font-size: 1.1em;
+  }
+</style>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+$(".fancybox").fancybox({
+    openEffect  : 'fade',
+    closeEffect : 'fade'
+});
+</script>
+<title> About ORAS </title>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="head">
+		<div id="headInner">
+			<a href="/~ams404/1052/homeORAS.html"><img id="logo" src="logosmall.jpg" alt="ORAS Logo"/> </a>
+		</div>
+	</div>
+	
+	<div id="nav">
+		<div id="navInner">
+			<ul>
+				<li><a href="/~ams404/1052/ORAS/ORAShome.html">Home</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASabout.html">About</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASdirections.html">Directions</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASmembership.html"> Membership</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASmembers.html">Board of Directors</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORAScalendar.html">Upcoming Events</a></li>
+				<li><a href="/~ams404/1052/ORAS/Astroblast.html">Astroblast</a></li>
+				<li><a href="/~ams404/1052/ORAS/ORASeducation.html">Education @ Oras</a> </li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id= "main">
+		<div id="mainInner">
+		
+			<div id="leftColumn">
+				<h1> ORAS Observatory </h1>
+				<p id="mission"> The Oil Region Astronomical Society's mission is to inspire diverse learners of all ages through engagement in astronomy.</p>
+				<div id="leftText">
+					<h3> About the Observatory:</h3>
+					<p> The Oil Region Astronomical Observatory was constructed over a 
+					    three year period by members of the Oil Region Astronomical  
+					    Society and local volunteers.The observatory is located in  
+					    Venango County Pennsylvania within Two Mile Run County Park. 
+					 	The unique building houses an 14 inch Meade SCT, one of the 
+					 	largest telescope available for public use in Northwestern 
+					 	Pennsylvania. A small ready room is attached to the 20 foot 
+					    diameter observatory.  A specially designed rotating roof 
+					    rolls open 10 feet to allow astronomical viewing by the 
+					    telescope, as well as spectators.</p>
+					    </div>
+					<a class="fancybox-thumb" rel="group" href="oras1.jpg" title="Two volunteers constructing the observatory"><img src="oras1_small.jpg" alt="" /></a>
+					<a class="fancybox-thumb" rel="group" href="oras2.jpg" title="A crane lifting the base roof of the observatory"><img src="oras2_small.jpg" alt="" /></a>
+					<a class="fancybox-thumb" rel="group" href="oras3.jpg" title="Board member, Tim Spuck, helping with the construction of the observatory"><img src="oras3_small.jpg" alt="" /></a>
+					<a class="fancybox-thumb" rel="group" href="oras4.jpg" title="A crane lifing the roof of the obervatory"><img src="oras4_small.jpg" alt="" /></a>
+					<a class="fancybox-thumb" rel="group" href="oras5.jpg" title="The completed observatory"><img src="oras5_small.jpg" alt="" /></a>
+					<a class="fancybox-thumb" rel="group" href="oras6.jpg" title="Proud volunteers infront of the completed obersvatory"><img src="oras6_small.jpg" alt="" /></a>
+					</div>
+					    
+					    
+					   <div id="right"> 
+					    
+					    <dl id="captionimage">
+					    <dt><img src="obsrainbow.jpg" alt="ORAS Observatory"/> </dt>
+					    <dd>The ORAS Observatory with a rainbow overhead </dd>
+					    </dl> 
+					    <div id="rightText">
+					    <h3> A Brief History:</h3>
+					    <p>In March of 1991, a small group of people with a passion for looking to the stars came up with an idea to unite those people in Northwest Pennsylvania with a common interest in astronomy.  Those efforts led to the formation of the Venango County Astronomy Club, the predecessor of the Oil Region Astronomical Society, a group of men, women and youths who share their equipment and knowledge of the stars in an effort to promote the fundamentals of astronomy and space science.  The group continues to work together, turning their eyes to the sky to ponder and discuss the universe in which we live.</p>
+					   </div>
+					    </div>
+			</div>
+
+	</div>
+	
+	<div id="footer">
+		<div id="footerInner">
+			<p> Oil Region Astronomical Society <br />
+			You can mail us at: P.O. Box 1535, Oil City, PA 16301 <br />
+ 			Or call the observatory: (814) 437-2525</p>
+		</div>
+	</div>
+</div>
+        <!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
+</body>
+</html>
